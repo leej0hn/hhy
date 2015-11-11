@@ -1,0 +1,76 @@
+a{ color:#0000CC}
+body{ font-family:"arial";}
+/*****************top********************/
+#top{ height:30px;line-height:30px;border-bottom:1px solid #ccc}
+#top s{  position:absolute; top:11px; left:0px; width:0px; height:10px; border-left:1px solid black;}
+.top_li{ height:30px;padding: 0px 6px 0px 7px;  position:relative;}
+.top_r_li{ height:30px;padding: 0px 8px 0px 8px;  position:relative}
+#welcome{ padding-left:2px;}
+/*****************nav********************/
+#nav{}
+.nav_logo{ height:66px;}
+.nav_li{position:relative;}
+.ico_logo{background:url(/Base/RS/CM/Image/logo_ydx.gif) no-repeat 0 0;width:500px; height:62px;position:absolute;  }
+.nav_menu{ height:34px; background-color:#BB1D41;}
+.nav_menu_li{ width:110px; height:34px; text-align:center;font-size:14px;font-weight:bold;color:White;line-height:34px; position:relative;}
+#nav .menu_cur{background:url(/Base/RS/YDX/Image/menubg.jpg) no-repeat 0 0;width:99px; height:34px;position:absolute; color:White;padding-top:2px;}
+#nav .menu_cur a{ color:#BB1D41;}
+.nav_menu_item:hover{ background-color:#A40000;}
+/*****************portal********************/
+.main_l{ width: 700px; height: auto; min-height: 700px; display: block; float: left; }
+.main_r{ width: 245px; height: 700px; display: block; float: right; }
+/*****************bottom********************/
+#bottom{ text-align:center; padding-top:8px; width:100%;  border-top:1px solid #ccc;}
+.bottom_link{ padding-right:4px; padding-left:4px; line-height:30px; height:30px; }
+/*****************warp********************/
+#warp{ width:985px;margin:0 auto;}
+.middle{ background:#fff}
+.main_ad{ height:48px;}
+/*****************ฤฺาณ********************/
+.main_nav{width: 985px;height: 50px;line-height:50px; color:#737373; font-size:15px;}
+.main_nav a{color:#737373; }
+.main_nav a:hover{ text-decoration:underline; }
+.main_c{width:985px; min-height:500px;}
+.main_c_l{width: 135px; float:left; margin-bottom:30px;border-top:0px; background-color:#FBFBFB;}
+.main_c_l a{ color:Black;}
+.main_c_l_b{text-align:left; position:relative;text-align:left; height:35px; line-height:35px; width:135px;}
+.main_c_l_h{width:100%;border:0; height:70px; line-height:70px;}
+.main_c_l_h span{ font-weight:bold; padding-left:40px;font-size:14px;}
+.main_c_l_b a{ margin-left:40px;}
+.main_c_l_b a:hover{ color:Red}
+.main_c_l .cur{ color:Red; font-weight:bold;}
+.main_c_r{width: 825px; background-color: White; float:right; min-height:700px; border-left:1px solid #f2f2f2;padding-left:10px; padding-right:10px;}
+.icon_dot{background:url(/Base/RS/YDX/Image/dot.jpg) no-repeat 0 0;width:7px; height:7px;position:absolute;top:3px;top:14px; left:34px;}
+.main_c_nav{height:60px; line-height:60px;}
+.main_c_nav_l{ float: left; font-size:18px; width:200px; position:relative;}
+.main_c_nav_lh{ padding-left:15px;}
+.main_c_nav_r{ float:right;}
+.ico_square{ width:6px; height:25px; background-color:#c1274b; display:block; position:absolute;top:15px;}
+.filter{height:36px; line-height:36px;  background:#e8f2fe;}
+.filter_l{height:36px; line-height:36px; width:560px; float:left; padding-left:10px;}
+.filter_r{height:36px; line-height:36px; width:220px; color: Blue; text-align: right; float:left;}
+.filter_l .lbl{ margin-left:2px; margin-right:2px; color:#34373c; padding-left:0px;}
+/*****************foot********************/
+#foot{ margin-top:20px; background-color:#f7f7f7; padding-bottom:10px;}
+.foot dl{ width:160px; float:left;}
+.foot dt{padding:6px; font:700 16px "microsoft yahei"; padding-left:26px;}
+.foot dd{line-height:20px; font-size:13px;padding-left:44px;}
+.foot a{ color:black;display:block;}
+.foot .ico_fh{width:44px; height:42px;display:block;background:url("/Base/RS/YDX/Image/icon.png") repeat scroll -296px -68px;margin-left:17px;}
+.foot .ico_ps{width:44px; height:42px;display:block;background:url("/Base/RS/YDX/Image/icon.png") repeat scroll -241px -68px;margin-left:17px;}
+.foot .ico_zf{width:44px; height:42px;display:block;background:url("/Base/RS/YDX/Image/icon.png") repeat scroll -179px -68px;margin-left:17px;}
+.foot .ico_fw{width:44px; height:42px;display:block;background:url("/Base/RS/YDX/Image/icon.png") repeat scroll -126px -68px;margin-left:17px;}
+.foot .ico_ts{width:44px; height:42px;display:block;background:url("/Base/RS/YDX/Image/icon.png") repeat scroll -68px -68px;margin-left:17px;}
+.foot .ico_hz{width:44px; height:42px;display:block;background:url("/Base/RS/YDX/Image/icon.png") repeat scroll -10px -68px;margin-left:17px;}
+.foot_h{ padding-top:17px;padding-bottom:10px;margin-left:10px;}
+/*****************advert********************/
+.main_ad_m{ position:relative;}
+.main_ad_h{ color:Red; line-height:48px; margin-left:15px}
+.main_ad_i{line-height:48px;margin-left: 48px;height: 50px;overflow: hidden;position: absolute;top: 0px; width: 500px;}
+.main_ad_i li{ list-style-type:none;}
+.main_ad_i a { color:#666;}
+.ico_ad{width:13px; height:16px;display:block;background:url("/Base/RS/YDX/Image/icon.png") repeat scroll -200px -22px; position:absolute; top:16px;}
+
+
+
+

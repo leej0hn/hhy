@@ -1,0 +1,15 @@
+
+/* CSS Document 
+body { text-align: center; margin: 10px auto; font-size: 12px; }
+table { width: 500px; text-align: center; margin: 0 auto; border-top: 1px solid #B1C3D9; border-left: 1px solid #B1C3D9; }
+table tr th, table tr td { font-size: 12px; border-bottom: 1px solid #B1C3D9; border-right: 1px solid #B1C3D9; line-height: 30px; height: 30px; }
+table tr th { background: #7F007F; color: #fff; font-size: 14px; }
+table tr td { padding-left: 12px; text-align: left; }*/
+em.error { padding-left: 17px; background: url("/UserControl/Jquery.validate/unchecked.gif") no-repeat; color: Red; height:22px; }
+em.success { padding-left: 17px; color:Gray; background: url("/UserControl/Jquery.validate/checked.gif") no-repeat; }
+.ipt_txt { width: 150px; border: 1px solid #B1C3D9; background-color: #FBFBFB; }
+input.error { background-color: #FBE2E2; }
+label.error { padding-left: 17px; font-size:12px; background: url("/Base/CT/Validate/unchecked.gif") no-repeat; color: Red;height:22px; }
+label.success { padding-left: 17px; color:Gray; background: url("/Base/CT/Validate/checked.gif") no-repeat; }
+span.error { padding-left: 17px; background: url("/Base/CT/Validate//unchecked.gif") no-repeat; color: Red;height:22px; }
+span.success { padding-left: 17px; color:Gray; background: url("/Base/CT/Validate//checked.gif") no-repeat; }
