@@ -37,6 +37,7 @@ CREATE TABLE `t_user` (
   `remarks` varchar(255) DEFAULT NULL COMMENT '备注信息',
   `del_flag` char(1) NOT NULL DEFAULT '0' COMMENT '删除标记',
   PRIMARY KEY (`id`),
+  UNIQUE KEY `phone` (`phone`) USING BTREE,
   KEY `t_user_update_date` (`update_date`),
   KEY `t_user_del_flag` (`del_flag`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COMMENT='用户表';
