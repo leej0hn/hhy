@@ -1,6 +1,5 @@
 package com.hhy.web.contoller.system;
 
-import java.util.HashMap;
 import java.util.Map;
 
 import javax.servlet.http.HttpServletRequest;

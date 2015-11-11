@@ -9,7 +9,6 @@
 	<script src="${ctxStatic}/custom/json2.js" type="text/javascript"></script>
 	<script src="${ctxStatic}/custom/zh-cn.js" type="text/javascript"></script>
 	<script src="${ctxStatic}/custom/jquery-ui.js" type="text/javascript"></script>
-	<script src="${ctxStatic}/custom/jquery-ui.js" type="text/javascript"></script>
 	<link href="${ctxStatic}/custom/jquery-ui.css" rel="stylesheet" type="text/css">
 	<script src="${ctxStatic}/custom/util.js" type="text/javascript"></script>
 	<script src="${ctxStatic}/custom/base.js" type="text/javascript"></script>
