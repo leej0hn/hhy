@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hhy.persistence.dao.UserMapper" >
+
+  <!-- 
+  <resultMap id="UserMap" type="User" >
+	    <result column="user_uuid" property="userUUID" jdbcType="VARCHAR" />
+	    <result column="user_name" property="userName" jdbcType="VARCHAR" />
+	    <result column="user_phone" property="userPhone" jdbcType="VARCHAR" />
+	    <result column="user_email" property="userEmail" jdbcType="VARCHAR" />
+  </resultMap>
+   -->
+    
+  <sql id="Base_Column_List">
+    id as id, name as name, email as email, phone as phone, user_type as userType, password as password, 
+    create_by as createBy, create_date as createDate, update_by as updateBy, update_date as updateDate, remarks as remarks,  
+    login_flag as loginFlag, login_ip as loginIp, login_date as loginDate, photo as photo, del_flag as delFlag  
+  </sql> 
+  
+  <!-- 
+  <select id="getRoles"  resultType="java.lang.String">
+	select   role_.role_name
+	from t_user   user_
+	inner join t_user_role  ur on user_.user_uuid = ur.user_uuid 
+	inner join t_role role_ on ur.role_id = role_.role_id
+	where user_.user_uuid= #{userUUID , jdbcType=VARCHAR}
+  </select> 
+   -->
+  
+  <select id="queryByPhone"  resultType="com.hhy.common.model.response.UserRsp">
+	 select <include refid="Base_Column_List" />
+	 from t_user  
+     where phone= #{phone}
+  </select> 
+  
+  <select id="queryByPhonePModel"  resultType="com.hhy.persistence.model.User">
+	 select <include refid="Base_Column_List" />
+	 from t_user  
+     where phone= #{phone}
+  </select> 
+   
+  <select id="getId"  resultType="com.hhy.common.model.response.UserRsp">
+	 select <include refid="Base_Column_List" />
+	 from t_user  
+     where id= #{id}
+  </select>  
+   
+  <!-- 插入用户 -->
+    <insert id="save" >
+		INSERT INTO t_user(
+			id, 
+			name, 
+			email, 
+			phone, 
+			user_type, 
+			password, 
+			create_by, 
+			create_date, 
+			update_by, 
+			update_date, 
+			remarks, 
+			login_flag, 
+			photo, 
+			del_flag
+		) VALUES (
+			#{id}, 
+			#{name}, 
+			#{email}, 
+			#{phone}, 
+			#{userType}, 
+			#{password}, 
+			#{createBy}, 
+			#{createDate}, 
+			#{updateBy}, 
+			#{updateDate}, 
+			#{remarks}, 
+			#{loginFlag}, 
+			#{photo}, 
+			#{delFlag}
+		)
+	</insert>
+  <!-- 
+  <insert id="saveRole" >
+	insert into `t_user_role` (user_uuid , role_id ) 
+	values( #{0,jdbcType=VARCHAR} ,
+		    #{1,jdbcType=INTEGER} 
+		   )
+  </insert>
+  -->	 	
+  <!-- 更新登录信息，如登录IP、登录时间 -->
+  <update id="updateLoginInfo">
+  	UPDATE t_user SET 
+  		login_ip = #{loginIp}, 
+  		login_Date = #{loginDate} 
+  	WHERE id = #{id}
+  </update>
+</mapper>
