@@ -1,9 +1,9 @@
 ﻿function LoginLoad() {
     var validtor = new Validator("frmLogin", {
         rules: {
-            UserCode: { required: true },
-            Password: { required: true },
-            VerifiyCode: { required: true }
+        	username: { required: true },
+        	password: { required: true },
+        	validateCode: { required: true }
         }
     });
     $("#btnlogin").click(function () {

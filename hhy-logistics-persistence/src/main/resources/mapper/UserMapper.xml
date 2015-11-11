@@ -94,4 +94,11 @@
   		login_Date = #{loginDate} 
   	WHERE id = #{id}
   </update>
+  
+  <select id="isExist"  resultType="java.lang.Integer">
+	 select count(id)
+	 from t_user  
+     where phone= #{phone}
+  </select> 
+  
 </mapper>

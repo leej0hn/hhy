@@ -8,7 +8,6 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.commons.collections.map.HashedMap;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.AuthenticationToken;
 import org.apache.shiro.authc.IncorrectCredentialsException;
@@ -78,12 +77,11 @@ public class FormAuthenticationFilter extends org.apache.shiro.web.filter.authc.
 //			super.issueSuccessRedirect(request, response);
 //		}
 		//返回JSON数据
-		ResultRsp result = new ResultRsp();
-		result.setCode("0");
+		ResultRsp result = new ResultRsp("0");
 		Map<String,String> data = new HashMap<String,String>();
 		data.put("url", getSuccessUrl());
 		result.setData(data);
-		BaseController.renderString((HttpServletResponse)response, result);
+		BaseController.renderRsp((HttpServletResponse)response, result);
 	}
 
 	/**

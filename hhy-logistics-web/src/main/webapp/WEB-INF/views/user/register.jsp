@@ -1,7 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
 <%@ include file="/WEB-INF/views/include/taglib.jsp"%>
 <!DOCTYPE html>
-<!-- saved from url=(0027)http://i.yundx.com/Register -->
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
    <title>好好运-欢迎登录</title>
    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE8">
@@ -23,9 +22,10 @@
 <link href="${ctxStatic}/custom/user.css" rel="stylesheet" type="text/css">
 <script src="${ctxStatic}/custom/user.js" type="text/javascript"></script>
 <script src="${ctxStatic}/custom/common.js" type="text/javascript"></script>
+<!-- 
 <script src="${ctxStatic}/custom/WdatePicker.js" type="text/javascript"></script>
 <link href="${ctxStatic}/custom/WdatePicker.css" rel="stylesheet" type="text/css">
-
+ -->
     
     <script type="text/javascript">
         $(function () { Register(); })
@@ -40,26 +40,23 @@
 </head>
 <body>
     <div id="top">
- <script type="text/javascript">
-     $(function () {CommonPageLoad();});
- </script>
 	<!--
    <div class="h30">
         <ul class="fl">
-            <li class="fl top_li "><a href="http://www.yundx.com/">首页</a></li>
+            <li class="fl top_li "><a href="">首页</a></li>
             <li class="fl top_li "><s></s><a href="javascript:UTIL.bookmark()">收藏</a></li>
             <li class="fl top_li "><s></s><span class="tel">4008-500-156</span></li>
             <li class="fl top_li"></li>
         </ul>
         <ul class="fr">
-            <li class="fl top_r_li">您好<a id="welcome_id" href="http://i.yundx.com/Center"></a>,欢迎来到运东西!</li>
+            <li class="fl top_r_li">您好<a id="welcome_id" href=""></a>,欢迎来到运东西!</li>
             <li class="fl top_r_li" id="welcome">
-                <a href="javascript:" target="_self" id="login">[请登陆]</a><span class="m10"></span> <a href="./用户注册运东西_在线物流_网上物流_物流网_物流电商平台_网上运输_网上发货_files/用户注册运东西_在线物流_网上物流_物流网_物流电商平台_网上运输_网上发货.html" target="_self">[免费注册]</a>
+                <a href="javascript:" target="_self" id="login">[请登陆]</a><span class="m10"></span> <a href="" target="_self">[免费注册]</a>
             </li>
-            <li class="fl top_r_li  pl15"><s></s><a href="http://www.yundx.com/Order/List" target="_self">我的订单</a></li>
-            <li class="fl top_r_li  pl15"><s></s><a href="http://www.yundx.com/WorkStation" target="_self">我要承运</a></li>
-            <li class="fl top_r_li  pl15"><s></s><a href="http://i.yundx.com/Message" target="_self">消息</a></li>
-            <li class="fl top_r_li  pl15"><s></s><a target="_blank" href="http://chat56.live800.com/live800/chatClient/chatbox.jsp?companyID=168877&jid=4805759923&enterurl=http%3A%2F%2Fchat56.live800.com%2Flive800%2Fpreview.jsp&pagereferrer=http%3A%2F%2Fchat56.live800.com%2Flive800%2FembedScript.jsp&tm=1325122818509)">在线客服</a></li>
+            <li class="fl top_r_li  pl15"><s></s><a href="" target="_self">我的订单</a></li>
+            <li class="fl top_r_li  pl15"><s></s><a href="" target="_self">我要承运</a></li>
+            <li class="fl top_r_li  pl15"><s></s><a href="" target="_self">消息</a></li>
+            <li class="fl top_r_li  pl15"><s></s><a target="_blank" href="">在线客服</a></li>
         </ul>
    </div> 
 	-->   
@@ -93,7 +90,7 @@
     <div class="clear"></div>
     <div class="mt20"></div>
     <div class="rc">
-        <form id="form1" method="post" action="http://i.yundx.com/Register/Submit" novalidate="novalidate">
+        <form id="form1" method="post" action="#" novalidate="novalidate">
             <input id="PswStrength" name="PswStrength" type="hidden">
             <table width="100%">
                 <tbody><tr class="mobile">
@@ -247,14 +244,13 @@
                     <a href="http://www.ymtfreight.com/" class="hide parten bottom_link" target="_blank">｜亿美通</a>
                     <a onclick="ShowPartners()" title="隐藏" class="hide parten bottom_link  click">&lt;&lt;</a>
                 </div>
-                <div style=" padding-top:10px;"> 2013@ULinkscm.com 版权所有 备案号:沪ICP备11026600号-4
-                  <span id="cnzz_stat_icon_1254093506"></span><script src="./用户注册运东西_在线物流_网上物流_物流网_物流电商平台_网上运输_网上发货_files/stat.php" type="text/javascript"></script><script src="./用户注册运东西_在线物流_网上物流_物流网_物流电商平台_网上运输_网上发货_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=5713123" target="_blank" title="站长统计"><img border="0" hspace="0" vspace="0" src="./用户注册运东西_在线物流_网上物流_物流网_物流电商平台_网上运输_网上发货_files/pic1.gif"></a>
+                <div style=" padding-top:10px;"> 2013@ULinkscm.com 版权所有 备案号:
+                  <span id="cnzz_stat_icon_1254093506"></span>
                 </div>    
             </li>
         </ul>
 	</div>  
     -->	
  </div>
-
-
-<div id="_my97DP" style="position: absolute; top: -1970px; left: -1970px;"><iframe style="width: 186px; height: 198px;" src="./用户注册运东西_在线物流_网上物流_物流网_物流电商平台_网上运输_网上发货_files/My97DatePicker.html" frameborder="0" border="0" scrolling="no"></iframe></div></body></html>
+</body>
+</html>

@@ -27,6 +27,12 @@ public class ResultRsp implements Serializable {
 		this.code = code;
 	}
 	
+	public ResultRsp(String code,Object data) {
+		super();
+		this.code = code;
+		this.data = data;
+	}
+	
 	public ResultRsp(String code,String mes) {
 		super();
 		this.code = code;

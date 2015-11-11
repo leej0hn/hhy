@@ -20,7 +20,6 @@ import com.hhy.web.common.utils.LogUtils;
 
 /**
  * 日志拦截器
- * @author ThinkGem
  * @version 2014-8-19
  */
 public class LogInterceptor  implements HandlerInterceptor {

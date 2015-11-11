@@ -17,5 +17,10 @@ public interface UserService {
 	UserRsp getId(String id);
 	
 	void updateLoginInfo(User user);
+	
+	/**
+	 * 存在返回true，不存在返回false
+	 */
+	Boolean isExist(String phone);
 
 }

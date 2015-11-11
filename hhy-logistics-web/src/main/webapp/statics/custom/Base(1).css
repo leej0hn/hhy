@@ -10,10 +10,10 @@ body{ font-family:"arial";}
 #nav{}
 .nav_logo{ height:66px;}
 .nav_li{position:relative;}
-.ico_logo{background:url(/Base/RS/CM/Image/logo_ydx.gif) no-repeat 0 0;width:500px; height:62px;position:absolute;  }
+.ico_logo{background:url(logo_hhy.gif) no-repeat 0 0;width:500px; height:62px;position:absolute;  }
 .nav_menu{ height:34px; background-color:#BB1D41;}
 .nav_menu_li{ width:110px; height:34px; text-align:center;font-size:14px;font-weight:bold;color:White;line-height:34px; position:relative;}
-#nav .menu_cur{background:url(/Base/RS/YDX/Image/menubg.jpg) no-repeat 0 0;width:99px; height:34px;position:absolute; color:White;padding-top:2px;}
+#nav .menu_cur{background:url(menubg.jpg) no-repeat 0 0;width:99px; height:34px;position:absolute; color:White;padding-top:2px;}
 #nav .menu_cur a{ color:#BB1D41;}
 .nav_menu_item:hover{ background-color:#A40000;}
 /*****************portal********************/
@@ -26,7 +26,7 @@ body{ font-family:"arial";}
 #warp{ width:985px;margin:0 auto;}
 .middle{ background:#fff}
 .main_ad{ height:48px;}
-/*****************ÄÚÒ³********************/
+/*****************ï¿½ï¿½Ò³********************/
 .main_nav{width: 985px;height: 50px;line-height:50px; color:#737373; font-size:15px;}
 .main_nav a{color:#737373; }
 .main_nav a:hover{ text-decoration:underline; }
@@ -40,7 +40,7 @@ body{ font-family:"arial";}
 .main_c_l_b a:hover{ color:Red}
 .main_c_l .cur{ color:Red; font-weight:bold;}
 .main_c_r{width: 825px; background-color: White; float:right; min-height:700px; border-left:1px solid #f2f2f2;padding-left:10px; padding-right:10px;}
-.icon_dot{background:url(/Base/RS/YDX/Image/dot.jpg) no-repeat 0 0;width:7px; height:7px;position:absolute;top:3px;top:14px; left:34px;}
+.icon_dot{background:url(dot.jpg) no-repeat 0 0;width:7px; height:7px;position:absolute;top:3px;top:14px; left:34px;}
 .main_c_nav{height:60px; line-height:60px;}
 .main_c_nav_l{ float: left; font-size:18px; width:200px; position:relative;}
 .main_c_nav_lh{ padding-left:15px;}
@@ -56,12 +56,12 @@ body{ font-family:"arial";}
 .foot dt{padding:6px; font:700 16px "microsoft yahei"; padding-left:26px;}
 .foot dd{line-height:20px; font-size:13px;padding-left:44px;}
 .foot a{ color:black;display:block;}
-.foot .ico_fh{width:44px; height:42px;display:block;background:url("/Base/RS/YDX/Image/icon.png") repeat scroll -296px -68px;margin-left:17px;}
-.foot .ico_ps{width:44px; height:42px;display:block;background:url("/Base/RS/YDX/Image/icon.png") repeat scroll -241px -68px;margin-left:17px;}
-.foot .ico_zf{width:44px; height:42px;display:block;background:url("/Base/RS/YDX/Image/icon.png") repeat scroll -179px -68px;margin-left:17px;}
-.foot .ico_fw{width:44px; height:42px;display:block;background:url("/Base/RS/YDX/Image/icon.png") repeat scroll -126px -68px;margin-left:17px;}
-.foot .ico_ts{width:44px; height:42px;display:block;background:url("/Base/RS/YDX/Image/icon.png") repeat scroll -68px -68px;margin-left:17px;}
-.foot .ico_hz{width:44px; height:42px;display:block;background:url("/Base/RS/YDX/Image/icon.png") repeat scroll -10px -68px;margin-left:17px;}
+.foot .ico_fh{width:44px; height:42px;display:block;background:url("icon.png") repeat scroll -296px -68px;margin-left:17px;}
+.foot .ico_ps{width:44px; height:42px;display:block;background:url("icon.png") repeat scroll -241px -68px;margin-left:17px;}
+.foot .ico_zf{width:44px; height:42px;display:block;background:url("icon.png") repeat scroll -179px -68px;margin-left:17px;}
+.foot .ico_fw{width:44px; height:42px;display:block;background:url("icon.png") repeat scroll -126px -68px;margin-left:17px;}
+.foot .ico_ts{width:44px; height:42px;display:block;background:url("icon.png") repeat scroll -68px -68px;margin-left:17px;}
+.foot .ico_hz{width:44px; height:42px;display:block;background:url("icon.png") repeat scroll -10px -68px;margin-left:17px;}
 .foot_h{ padding-top:17px;padding-bottom:10px;margin-left:10px;}
 /*****************advert********************/
 .main_ad_m{ position:relative;}
@@ -69,7 +69,7 @@ body{ font-family:"arial";}
 .main_ad_i{line-height:48px;margin-left: 48px;height: 50px;overflow: hidden;position: absolute;top: 0px; width: 500px;}
 .main_ad_i li{ list-style-type:none;}
 .main_ad_i a { color:#666;}
-.ico_ad{width:13px; height:16px;display:block;background:url("/Base/RS/YDX/Image/icon.png") repeat scroll -200px -22px; position:absolute; top:16px;}
+.ico_ad{width:13px; height:16px;display:block;background:url("icon.png") repeat scroll -200px -22px; position:absolute; top:16px;}
 
 
 

@@ -521,7 +521,7 @@ var LOCK = new function () {
                 var height = $(document).scrollTop() + 270;
                 if ($(".loading_mark").length == 0) {
                     var html = "";
-                    html += "<div class='circle_wait' style='top:" + height + "px;'><img src='/Base/RS/CM/Image/loading.gif' alt='" + LANG.AjaxSubmit_LockLoading + "'/></div>";
+                    html += "<div class='circle_wait' style='top:" + height + "px;'><img src='"+ctxStaticJS+"/custom/loading.gif' alt='" + LANG.AjaxSubmit_LockLoading + "'/></div>";
                     html += "<div class='loading_mark' tabindex='-1'></div>";
                     $("body").append(html);
                 }

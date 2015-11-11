@@ -26,7 +26,7 @@ function Register() {
         //通过id查找要进行校验的表单
         validator = new Validator("form1", {
             rules: {
-                UserPwd: {
+            	UserPwd: {
                     required: true,
                     minlength: 6
                 },
@@ -36,7 +36,7 @@ function Register() {
                 }
             },
             messages: {
-                UserPwd: {
+            	UserPwd: {
                     required: "请输入密码",
                     minlength: "密码的最小长度是{0}个字符"
                 },
@@ -102,10 +102,10 @@ function Register() {
                      target: $("#form1"),
                      validator: validator,
                      callback: function (reponse) {
-                         if (reponse.IsSuccess) {
-                             $(document.body).append(reponse.Data);
+                         if (reponse.code == 0 ) {
+                        	 window.location.href = ctxJS ;
                          } else {
-                             alert(reponse.Error);
+                             alert(reponse.mes);
                          }
                      }
                  })

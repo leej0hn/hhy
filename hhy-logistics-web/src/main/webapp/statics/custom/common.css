@@ -1,7 +1,7 @@
 /******************************Common*******************************/
 .contentTitle{height:37px; line-height:37px; padding-left:10px;}
 .contentTitle .redcolor{color:#bf2750}
-.shadow{ background: url("/Image/shadowbg.png") repeat-x;height: 10px; margin-left:5px; margin-right:5px;}
+.shadow{ background: url("shadowbg.png") repeat-x;height: 10px; margin-left:5px; margin-right:5px;}
 .centerTitle{ height:50px; line-height:65px; margin-left:20px; margin-right:20px; border-bottom:2px solid #F2F2F2; font-size:18px;}
 .tb{ color:#666666; padding-top:40px;}
 .tb tr{ line-height:40px;}

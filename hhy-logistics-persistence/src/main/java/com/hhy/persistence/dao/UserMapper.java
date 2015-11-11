@@ -15,4 +15,6 @@ public interface UserMapper {
 	
 	void updateLoginInfo(User user);
 	
+	int isExist(String phone);
+	
 }

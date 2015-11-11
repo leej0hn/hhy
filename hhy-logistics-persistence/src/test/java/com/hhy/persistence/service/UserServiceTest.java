@@ -29,7 +29,6 @@ public class UserServiceTest extends AbstractSpringJUnit4TestCase {
 		user.setPassword("123456");
 		user.setUserType("0002");
 		user.setPassword("123456");
-		user.setSalt("***************");
 		user.setCreateDate(new Date());
 		user.setRemarks("");
 		user.setPhoto("");
@@ -50,6 +49,11 @@ public class UserServiceTest extends AbstractSpringJUnit4TestCase {
 		user.setLoginDate(new Date());
 		user.setLoginIp("127.0.0.1");
 		service.updateLoginInfo(user);
+	}
+	
+	@Test
+	public void testIsExist(){
+		System.out.println(service.isExist("18928966702"));
 	}
 
 }

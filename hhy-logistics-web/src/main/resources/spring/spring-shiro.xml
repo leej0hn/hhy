@@ -100,7 +100,8 @@
 		<constructor-arg>
 			<value>
 				/static/** = anon
-				${adminPath}/register = anon  
+				${adminPath}/register = anon 
+				${adminPath}/phoneVail = anon 
 				${adminPath}/login = authc
 				${adminPath}/logout = logout
 				${adminPath}/** = user

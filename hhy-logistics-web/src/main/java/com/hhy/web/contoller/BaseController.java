@@ -26,6 +26,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.hhy.web.common.beanvalidator.BeanValidators;
 import com.hhy.web.common.mapper.JsonMapper;
+import com.hhy.web.common.response.ResultRsp;
 import com.hhy.web.common.utils.DateUtils;
 
 
@@ -133,6 +134,10 @@ public abstract class BaseController {
 			sb.append(message).append(messages.length>1?"<br/>":"");
 		}
 		redirectAttributes.addFlashAttribute("message", sb.toString());
+	}
+	
+	public static String renderRsp(HttpServletResponse response, ResultRsp result ) {
+		return BaseController.renderString((HttpServletResponse)response, result);
 	}
 	
 	/**

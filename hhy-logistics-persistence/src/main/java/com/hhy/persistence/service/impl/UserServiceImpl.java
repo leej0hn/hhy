@@ -1,9 +1,12 @@
 package com.hhy.persistence.service.impl;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 
+import com.hhy.common.constants.UserType;
 import com.hhy.common.model.response.UserRsp;
 import com.hhy.persistence.dao.UserMapper;
 import com.hhy.persistence.model.User;
@@ -23,18 +26,31 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public UserRsp getByPhone(String phone) {
-		Assert.hasLength(phone,"phone not null !");
+		Assert.hasLength(phone,"手机号不能为空");
 		return userDao.queryByPhone(phone);
 	}
 
 	@Override
 	public void register(User user) {
+		Assert.hasLength(user.getPhone(), "手机号不能为空");
+		Assert.hasLength(user.getPassword(), "密码不能为空");
+		if(user.getName() == null){
+			user.setName(user.getPhone());
+		}
+		if(user.getUserType() == null){
+			user.setUserType(UserType.MEMBER);
+		}
+		if(isExist(user.getPhone())){
+			throw new IllegalArgumentException("该号码已经存在");
+		}
+		user.setDelFlag("0");//默认激活状态
+		user.setCreateDate(new Date());
 		userDao.save(user);
 	}
 
 	@Override
 	public UserRsp getId(String id) {
-		Assert.hasLength(id,"id not null !");
+		Assert.hasLength(id,"id不能为空");
 		return userDao.getId(id);
 	}
 
@@ -49,8 +65,19 @@ public class UserServiceImpl implements UserService{
 
 	@Override
 	public User getByPhonePModel(String phone) {
-		Assert.hasLength(phone,"phone not null !");
+		Assert.hasLength(phone,"手机号不能为空");
 		return userDao.queryByPhonePModel(phone);
+	}
+
+	@Override
+	public Boolean isExist(String phone) {
+		Assert.hasLength(phone,"手机号不能为空");
+		boolean isExist = true ;//默认存在
+		int count = userDao.isExist(phone);
+		if( count == 0 ){//不存在
+			isExist = false;
+		}
+		return isExist;
 	}
 	
 }

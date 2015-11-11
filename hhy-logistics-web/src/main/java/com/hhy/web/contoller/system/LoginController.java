@@ -54,7 +54,6 @@ public class LoginController extends BaseController{
 	@RequestMapping(value = "${adminPath}/login", method = RequestMethod.GET)
 	public String login(HttpServletRequest request, HttpServletResponse response, Model model) {
 		Principal principal = UserUtils.getPrincipal();
-		
 		if (logger.isDebugEnabled()){
 			logger.debug("login, active session size: {}", sessionDAO.getActiveSessions(false).size());
 		}
@@ -111,10 +110,7 @@ public class LoginController extends BaseController{
 		request.getSession().setAttribute(ValidateCodeServlet.VALIDATE_CODE, IdGen.uuid());
 		
 		
-		ResultRsp result = new ResultRsp();
-		result.setCode("1");
-		result.setMes(message);
-		return BaseController.renderString((HttpServletResponse)response, result);
+		return BaseController.renderRsp((HttpServletResponse)response, new ResultRsp("1", message));
 	}
 
 	/**
