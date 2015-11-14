@@ -114,7 +114,7 @@ public class LoginController extends BaseController{
 	}
 
 	/**
-	 * 登录成功，进入管理首页
+	 * 登录成功，进入管理首页 
 	 */
 	@RequiresPermissions("user")
 	@RequestMapping(value = "${adminPath}")
